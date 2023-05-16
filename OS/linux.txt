@@ -1,0 +1,40 @@
+echo $HOME
+echo $SHELL
+whoami
+ls
+cd /root
+ps aux
+cd ..
+cd../..
+pstree
+
+
+echo "Top 10 processes in descending order" && ps axl | head -n 10
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=%mem |head
+who -u
+who -u | wc -l
+whoami
+uname
+pwd
+uname -a 
+uname -r
+
+
+
+
+
+
+
+
+
+
+pwd
+mkdir
+cd 
+rmdir
+touch 
+echo
+mv 
+cp
+rm
+
