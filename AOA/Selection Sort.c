@@ -17,8 +17,9 @@ void main()
 void ascend(int a[],int n)
 {
     int i,j,temp,min=0;
-    for(i=0;i<n-1;i++)
+    for(i=0;i<n;i++)
     {
+        min=i;
         for(j=i+1;j<n;j++)
         {
             if(a[min]>a[j])
