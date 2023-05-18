@@ -1,0 +1,8 @@
+ping
+ipconfig
+getmac
+arp
+arp -a
+netstat
+tracert
+nslookup
