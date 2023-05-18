@@ -5,38 +5,30 @@ using namespace std;
 
 int main()
 {
-    string data;
-    cout << "Enter flag: ";
-    cin >> data; // 1111111
+    string data,finalData;
+    cout << "Enter the data: ";
+    cin >> data;
     int count = 0;
-    string arr[data.length() + 1]; // arr[12]
-    int j = 0;
-    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+    string flag = "01111110";
+    finalData += flag;
+    for (int i = 0; i != data.length(); i++)
     {
-        if (data[j] == '1')
-        {
-            count++; // 6
-            if (count == 6)
-            {
-                count = 0;
-                arr[i] = '0';
-            }
-            else
-            {
-                arr[i] = data[j];
-                j++;
-            }
-        }
-        else
+        if (data[i] == '1' && count == 5)
         {
             count = 0;
-            arr[i] = data[i];
-            j++;
+            finalData += '0';
         }
+        if (data[i] == '1')
+        {
+            count++;
+        }
+        else if (count > 0)
+        {
+            count = 0;
+        }
+        finalData += data[i];
     }
-    for (int i = 0; i < data.length() + 1; i++)
-    {
-        cout << arr[i];
-    }
+    finalData += flag;
+    cout << "\nFinal data: " << finalData << "\n\n";
     return 0;
 }
