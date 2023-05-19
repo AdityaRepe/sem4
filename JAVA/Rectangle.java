@@ -1,12 +1,3 @@
-package hi;
-
-//Create a Java class named Rectangle to represent a rectangle. The class should have
-//two instance variables: length and width. The class should have three constructors:
-//1. A default constructor that initializes length and width to 1.
-//2. A constructor that accepts one argument and initializes both length and width
-//to the value of the argument.
-//3. A constructor that accepts two arguments and initializes length and width to the
-//respective arguments.
 
 class Rectangle {
  public int length;
